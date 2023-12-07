@@ -111,7 +111,7 @@ public class TxYunMsgForm implements IMsgForm {
             TMsgSms tMsgSms = JSONUtil.toBean(tMsg.getContent(), TMsgSms.class);
             templateDataList = tMsgSms.getTemplateDataList();
         }
-        String[] headerNames = {"模板参数", "参数对应的值", "操作"};
+        String[] headerNames = {"模板参数", "参数对应的值", "操作" };
         Object[][] cellData = new String[templateDataList.size()][headerNames.length];
         for (int i = 0; i < templateDataList.size(); i++) {
             TemplateData tTemplateData = templateDataList.get(i);
@@ -215,7 +215,7 @@ public class TxYunMsgForm implements IMsgForm {
      */
     public static void initTemplateDataTable() {
         JTable msgDataTable = getInstance().getTemplateMsgDataTable();
-        String[] headerNames = {"模板参数", "参数对应的值", "操作"};
+        String[] headerNames = {"模板参数", "参数对应的值", "操作" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         msgDataTable.setModel(model);
         msgDataTable.updateUI();

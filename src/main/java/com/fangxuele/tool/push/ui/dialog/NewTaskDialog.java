@@ -339,6 +339,7 @@ public class NewTaskDialog extends JDialog {
         }
         reimportCheckBox.setSelected(beforeTTask.getReimportPeople() != null && beforeTTask.getReimportPeople() == 1);
         sendPushResultCheckBox.setSelected(beforeTTask.getResultAlert() != null && beforeTTask.getResultAlert() == 1);
+        saveResponseBodyCheckBox.setSelected(beforeTTask.getSaveResult() != null && beforeTTask.getSaveResult() == 1);
         mailResultToTextField.setText(beforeTTask.getAlertEmails());
     }
 
@@ -484,8 +485,7 @@ public class NewTaskDialog extends JDialog {
             messageMapReverse.put(tMsg.getId(), tMsg.getMsgName());
             msgComboBox.addItem(tMsg.getMsgName());
         }
-        saveResponseBodyCheckBox.setSelected(false);
-        otherPanel.setVisible(false);
+        otherPanel.setVisible(MessageTypeEnum.HTTP_CODE == msgType ? true : false);
     }
 
     /**

@@ -131,7 +131,7 @@ public class TaskForm {
         JTable taskListTable = taskForm.getTaskListTable();
 
         // 任务数据列表
-        String[] headerNames = {"id", "任务名称", "消息类型", "周期", "消息名称", "人群"};
+        String[] headerNames = {"id", "任务名称", "消息类型", "周期", "消息名称", "人群" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         taskListTable.setModel(model);
 
@@ -168,7 +168,7 @@ public class TaskForm {
         } else {
             JTable taskHisListTable = taskForm.getTaskHisListTable();
             // 清空任务历史列表
-            String[] headerNames2 = {"id", "是否空跑", "开始时间", "结束时间", "总量", "成功", "失败", "状态"};
+            String[] headerNames2 = {"id", "是否空跑", "开始时间", "结束时间", "总量", "成功", "失败", "状态" };
             DefaultTableModel model2 = new DefaultTableModel(null, headerNames2);
             taskHisListTable.setModel(model2);
         }
@@ -439,7 +439,7 @@ public class TaskForm {
         JTable taskHisListTable = taskForm.getTaskHisListTable();
 
         // 任务数据列表
-        String[] headerNames = {"id", "是否空跑", "开始时间", "结束时间", "总量", "成功", "失败", "状态"};
+        String[] headerNames = {"id", "是否空跑", "开始时间", "结束时间", "总量", "成功", "失败", "状态" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         taskHisListTable.setModel(model);
 

@@ -205,7 +205,7 @@ public class HttpMsgForm implements IMsgForm {
         // Params=====================================
         initParamTable();
         List<NameValueObject> params = JSONUtil.toList(JSONUtil.parseArray(tMsgHttp.getParams()), NameValueObject.class);
-        String[] headerNames = {"Name", "Value", ""};
+        String[] headerNames = {"Name", "Value", "" };
         Object[][] cellData = new String[params.size()][headerNames.length];
         for (int i = 0; i < params.size(); i++) {
             NameValueObject nameValueObject = params.get(i);
@@ -246,7 +246,7 @@ public class HttpMsgForm implements IMsgForm {
         // Cookies=====================================
         initCookieTable();
         List<CookieObject> cookies = JSONUtil.toList(JSONUtil.parseArray(tMsgHttp.getCookies()), CookieObject.class);
-        headerNames = new String[]{"Name", "Value", "Domain", "Path", "Expiry", ""};
+        headerNames = new String[]{"Name", "Value", "Domain", "Path", "Expiry", "" };
         cellData = new String[cookies.size()][headerNames.length];
         for (int i = 0; i < cookies.size(); i++) {
             CookieObject cookieObject = cookies.get(i);
@@ -433,7 +433,7 @@ public class HttpMsgForm implements IMsgForm {
     public static void initParamTable() {
         JTable paramTable = getInstance().getParamTable();
         paramTable.setRowHeight(36);
-        String[] headerNames = {"Name", "Value", ""};
+        String[] headerNames = {"Name", "Value", "" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         paramTable.setModel(model);
         paramTable.updateUI();
@@ -458,7 +458,7 @@ public class HttpMsgForm implements IMsgForm {
     public static void initHeaderTable() {
         JTable paramTable = getInstance().getHeaderTable();
         paramTable.setRowHeight(36);
-        String[] headerNames = {"Name", "Value", ""};
+        String[] headerNames = {"Name", "Value", "" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         paramTable.setModel(model);
         paramTable.updateUI();
@@ -483,7 +483,7 @@ public class HttpMsgForm implements IMsgForm {
     public static void initCookieTable() {
         JTable paramTable = getInstance().getCookieTable();
         paramTable.setRowHeight(36);
-        String[] headerNames = {"Name", "Value", "Domain", "Path", "Expiry", ""};
+        String[] headerNames = {"Name", "Value", "Domain", "Path", "Expiry", "" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         paramTable.setModel(model);
         paramTable.updateUI();

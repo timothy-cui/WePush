@@ -60,7 +60,7 @@ public class AccountManageForm {
 
     public static void initMessageList() {
         // 历史消息管理
-        String[] headerNames = {"账户名称"};
+        String[] headerNames = {"账户名称" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         accountManageForm.getAccountListTable().setModel(model);
         // 隐藏表头

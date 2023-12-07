@@ -132,7 +132,7 @@ public class PeopleEditForm {
         JTable memberListTable = peopleEditForm.getMemberListTable();
 
         // 人群数据列表
-        String[] headerNames = {"PIN", "VarData", "id"};
+        String[] headerNames = {"PIN", "VarData", "id" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         memberListTable.setModel(model);
         // 隐藏表头
@@ -166,7 +166,7 @@ public class PeopleEditForm {
 
         // 人群数据列表
         JTable memberListTable = peopleEditForm.getMemberListTable();
-        String[] headerNames = {"PIN", "VarData", "id"};
+        String[] headerNames = {"PIN", "VarData", "id" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         memberListTable.setModel(model);
 

@@ -122,7 +122,7 @@ public class MaSubscribeMsgForm implements IMsgForm {
             TMsgMaSubscribe tMsgMaSubscribe = JSONUtil.toBean(tMsg.getContent(), TMsgMaSubscribe.class);
             templateDataList = tMsgMaSubscribe.getTemplateDataList();
         }
-        String[] headerNames = {"Name", "Value", "Color", "操作"};
+        String[] headerNames = {"Name", "Value", "Color", "操作" };
         Object[][] cellData = new String[templateDataList.size()][headerNames.length];
         for (int i = 0; i < templateDataList.size(); i++) {
             TemplateData tTemplateData = templateDataList.get(i);
@@ -230,7 +230,7 @@ public class MaSubscribeMsgForm implements IMsgForm {
      */
     public static void initTemplateDataTable() {
         JTable msgDataTable = getInstance().getTemplateMsgDataTable();
-        String[] headerNames = {"Name", "Value", "Color", "操作"};
+        String[] headerNames = {"Name", "Value", "Color", "操作" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         msgDataTable.setModel(model);
         msgDataTable.updateUI();

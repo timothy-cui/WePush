@@ -289,7 +289,7 @@ public class MpTemplateMsgForm implements IMsgForm {
      */
     public static void fillTemplateDataTable(List<TemplateData> templateDataList) {
         // 模板消息Data表
-        String[] headerNames = {"Name", "Value", "Color", "操作"};
+        String[] headerNames = {"Name", "Value", "Color", "操作" };
         Object[][] cellData = new String[templateDataList.size()][headerNames.length];
         for (int i = 0; i < templateDataList.size(); i++) {
             TemplateData tTemplateData = templateDataList.get(i);
@@ -410,7 +410,7 @@ public class MpTemplateMsgForm implements IMsgForm {
      */
     public static void initTemplateDataTable() {
         JTable msgDataTable = getInstance().getTemplateMsgDataTable();
-        String[] headerNames = {"Name", "Value", "Color", "操作"};
+        String[] headerNames = {"Name", "Value", "Color", "操作" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         msgDataTable.setModel(model);
         msgDataTable.updateUI();

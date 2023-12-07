@@ -81,7 +81,7 @@ public class PeopleManageForm {
 
     public static void initPeopleList() {
         // 人群列表
-        String[] headerNames = {"人群名称", "id"};
+        String[] headerNames = {"人群名称", "id" };
         DefaultTableModel model = new DefaultTableModel(null, headerNames);
         peopleManageForm.getPeopleListTable().setModel(model);
         // 隐藏表头

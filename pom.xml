@@ -230,26 +230,36 @@
             <groupId>net.sourceforge.cpdetector</groupId>
             <artifactId>cpdetector</artifactId>
             <version>1.0.10</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/cpdetector_1.0.10.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.cpdetector</groupId>
             <artifactId>antlr</artifactId>
             <version>2.7.4</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/antlr-2.7.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.cpdetector</groupId>
             <artifactId>chardet</artifactId>
             <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/chardet-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.cpdetector</groupId>
             <artifactId>jargs</artifactId>
             <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/jargs-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.taobao</groupId>
             <artifactId>taobao-sdk-java-auto</artifactId>
             <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/taobao-sdk-java-auto.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
